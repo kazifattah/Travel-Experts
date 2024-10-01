@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Travel-Experts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+
+    <div class="grid-container" id="Homepage">
+        <header class="header"><a href="./Travel-Experts-index.html">
+            <!-- Header with the logo and "Welcome to Travel Experts" -->
+            <img src="./images/travel.png" height="175px"></a>
+            <h1>Welcome to Travel Experts</h1>
+        
+        </header>
+
+        <nav class="nav-bar">
+            <!-- a navigation bar with links to different pages
+             the only ones that work are the Our Experts page and the Register page -->
+            <ul>
+                <li><a href="./Travel-Experts-contact.html" class="active">Our Experts</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Cruises</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="./Travel-Experts-register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content" id="main">
+            <div id="enter">Enter your information:</div>
+            <form action="registrationinfo.php" method="get" onsubmit="confirmMessage(event)" onreset="confirmMessage(event)">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <div>
+                        <label for="fname">First Name: </label>
+                        <input type="text" id="fname" name="First Name">
+                        <div class="explainer" id="fname1">Enter your first name</div>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" name="Last Name">
+                        <div class="explainer" id="lname1">Enter your last name</div>
+                    </div>
+    
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="Email">
+                        <div class="explainer" id="email1">Enter your email</div>
+                    </div>
+    
+                    <div>
+                        <label for="phone">Phone: </label>
+                        <input type="text" id="phone" name="Phone">
+                        <div class="explainer" id="phone1">Enter your phone number</div>
+                    </div>
+
+                </fieldset>
+                
+                
+                <fieldset>
+                    <legend>Customer Address</legend>
+                    <div>
+                        <label for="address">Street Address: </label>
+                        <input type="text" id="address" name="Street Address">
+                        <div class="explainer" id="address1">Enter your address</div>
+    
+                    </div>
+    
+                    <div>
+                        <label for="city">City: </label>
+                        <input type="Text" id="city" name="City">
+                        <div class="explainer" id="city1">Enter your city name</div>
+    
+                    </div>
+    
+                    <div>
+                        <label for="province" >Province: </label>
+                        <select id="province" name="Province">
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                        </select>
+                        <div class="explainer" id="province1">Enter your Province name</div>
+                    </div>
+    
+                    <div>
+                        <label for="postal">Postal Code: </label>
+                        <input type="Text" id="postal" name="Postal Code">
+                        <div class="explainer" id="postal1">Enter your Postal Code</div>
+                    </div>
+                    <div>
+    
+                    </div>
+                    
+
+                </fieldset>
+
+                <input type="submit" value="submit" class="button">
+                <input type="reset" value="reset" class="button" >  
+
+                
+            </form>
+
+            
+            
+
+
+        </main>
+        
+
+        
+
+        <footer>
+            <!-- footer with the copyright logo -->
+            <hr>
+            <p>&#169 Copyright 2024</p>
+        </footer>
+        
+
+        <script src="register.js">
+                      
+        </script>
+
+
+
+
+</body>
+</html>
