@@ -157,11 +157,28 @@ for (let i=0; i<imgArray.length; i++) {
 
   document.getElementById(`div${i+1}`).addEventListener("click", function(){ 
   
-  //function to open window and timer for 5 seconds
-
-  const myWindow = window.open(urlArray[i]);
+  //function to open window
+  
+  const myWindow = window.open("redirect.html", "width=200", "height=400");
+  
+  // click handler on new window to redirect to url connected to the images
+  myWindow.addEventListener("click", function(){
+    const newWindow = window.open(urlArray[i]);
+  });
+  
+  // timeout function to close new window after 5 seconds
   setTimeout(function() {myWindow.close()}, 5000);
+
+  
 });
 
 };
+
+
+
+
+
+
+
+
 
